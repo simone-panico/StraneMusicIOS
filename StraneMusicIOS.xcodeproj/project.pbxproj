@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		261724BF2ACF42F200A74B21 /* StraneMusicIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724BE2ACF42F200A74B21 /* StraneMusicIOSApp.swift */; };
-		261724C12ACF42F200A74B21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724C02ACF42F200A74B21 /* ContentView.swift */; };
+		261724C12ACF42F200A74B21 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724C02ACF42F200A74B21 /* HomeView.swift */; };
 		261724C32ACF42F400A74B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261724C22ACF42F400A74B21 /* Assets.xcassets */; };
 		261724C62ACF42F400A74B21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261724C52ACF42F400A74B21 /* Preview Assets.xcassets */; };
 		261724D02ACF42F400A74B21 /* StraneMusicIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724CF2ACF42F400A74B21 /* StraneMusicIOSTests.swift */; };
 		261724DA2ACF42F400A74B21 /* StraneMusicIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724D92ACF42F400A74B21 /* StraneMusicIOSUITests.swift */; };
 		261724DC2ACF42F400A74B21 /* StraneMusicIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724DB2ACF42F400A74B21 /* StraneMusicIOSUITestsLaunchTests.swift */; };
+		261724EA2ACF4CDF00A74B21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724E92ACF4CDF00A74B21 /* MainView.swift */; };
+		261724EC2ACF50C000A74B21 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724EB2ACF50C000A74B21 /* LibraryView.swift */; };
+		261724EE2ACF55BB00A74B21 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724ED2ACF55BB00A74B21 /* ProfileView.swift */; };
+		261724F02ACF5EDE00A74B21 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724EF2ACF5EDE00A74B21 /* SearchView.swift */; };
+		261724F22ACF5EF000A74B21 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724F12ACF5EF000A74B21 /* BrowseView.swift */; };
+		261724F42ACF652700A74B21 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724F32ACF652700A74B21 /* SongView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* Begin PBXFileReference section */
 		261724BB2ACF42F200A74B21 /* StraneMusicIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StraneMusicIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261724BE2ACF42F200A74B21 /* StraneMusicIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraneMusicIOSApp.swift; sourceTree = "<group>"; };
-		261724C02ACF42F200A74B21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		261724C02ACF42F200A74B21 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		261724C22ACF42F400A74B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		261724C52ACF42F400A74B21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		261724CB2ACF42F400A74B21 /* StraneMusicIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StraneMusicIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +50,12 @@
 		261724D52ACF42F400A74B21 /* StraneMusicIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StraneMusicIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		261724D92ACF42F400A74B21 /* StraneMusicIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraneMusicIOSUITests.swift; sourceTree = "<group>"; };
 		261724DB2ACF42F400A74B21 /* StraneMusicIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraneMusicIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		261724E92ACF4CDF00A74B21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		261724EB2ACF50C000A74B21 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		261724ED2ACF55BB00A74B21 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		261724EF2ACF5EDE00A74B21 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		261724F12ACF5EF000A74B21 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		261724F32ACF652700A74B21 /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,8 @@
 		261724BD2ACF42F200A74B21 /* StraneMusicIOS */ = {
 			isa = PBXGroup;
 			children = (
+				261724E82ACF431300A74B21 /* View */,
 				261724BE2ACF42F200A74B21 /* StraneMusicIOSApp.swift */,
-				261724C02ACF42F200A74B21 /* ContentView.swift */,
 				261724C22ACF42F400A74B21 /* Assets.xcassets */,
 				261724C42ACF42F400A74B21 /* Preview Content */,
 			);
@@ -125,6 +137,20 @@
 				261724DB2ACF42F400A74B21 /* StraneMusicIOSUITestsLaunchTests.swift */,
 			);
 			path = StraneMusicIOSUITests;
+			sourceTree = "<group>";
+		};
+		261724E82ACF431300A74B21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				261724E92ACF4CDF00A74B21 /* MainView.swift */,
+				261724C02ACF42F200A74B21 /* HomeView.swift */,
+				261724EF2ACF5EDE00A74B21 /* SearchView.swift */,
+				261724EB2ACF50C000A74B21 /* LibraryView.swift */,
+				261724F12ACF5EF000A74B21 /* BrowseView.swift */,
+				261724ED2ACF55BB00A74B21 /* ProfileView.swift */,
+				261724F32ACF652700A74B21 /* SongView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261724C12ACF42F200A74B21 /* ContentView.swift in Sources */,
+				261724EC2ACF50C000A74B21 /* LibraryView.swift in Sources */,
+				261724C12ACF42F200A74B21 /* HomeView.swift in Sources */,
+				261724F22ACF5EF000A74B21 /* BrowseView.swift in Sources */,
+				261724F42ACF652700A74B21 /* SongView.swift in Sources */,
+				261724EE2ACF55BB00A74B21 /* ProfileView.swift in Sources */,
+				261724EA2ACF4CDF00A74B21 /* MainView.swift in Sources */,
+				261724F02ACF5EDE00A74B21 /* SearchView.swift in Sources */,
 				261724BF2ACF42F200A74B21 /* StraneMusicIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

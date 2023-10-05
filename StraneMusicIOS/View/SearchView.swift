@@ -1,0 +1,46 @@
+//
+//  SearchView.swift
+//  StraneMusicIOS
+//
+//  Created by Simone Panico on 05.10.2023.
+//
+
+import SwiftUI
+
+struct SearchView: View {
+    @State private var searchText: String = ""
+    
+    
+    private var data: [Int] = Array(1...20)
+    private let colors: [Color] = [.red, .blue, .green, .yellow]
+    
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.fixed(1))], spacing: 20) {
+                    ForEach(data, id: \.self) { number in
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 1000, height: 100)
+                                .foregroundStyle(colors[number%4])
+                                .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+                        }
+                    }
+                }
+            }
+            .searchable(text: $searchText)
+            .navigationTitle(Text("Search"))
+            .overlay(
+                ProfileView()
+                    .padding(.trailing, 20)
+                    .offset(x: 0, y: -50),
+                alignment: .topTrailing)
+            
+        }
+        
+    }
+}
+
+#Preview {
+    SearchView()
+}
