@@ -22,7 +22,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                Text("Playlists")
+                Text("Playlist")
                     .font(.system(size: 30, weight: .medium))
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: rows, alignment: .center) {
