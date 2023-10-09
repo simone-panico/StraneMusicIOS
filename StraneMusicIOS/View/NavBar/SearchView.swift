@@ -30,11 +30,6 @@ struct SearchView: View {
             }
             .searchable(text: $searchText)
             .navigationTitle(Text("Search"))
-            .overlay(
-                ProfileView()
-                    .padding(.trailing, 20)
-                    .offset(x: 0, y: -50),
-                alignment: .topTrailing)
             
         }
         

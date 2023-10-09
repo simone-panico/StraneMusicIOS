@@ -22,17 +22,25 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                Text("Playlist")
+                Text("Playlists")
                     .font(.system(size: 30, weight: .medium))
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: rows, alignment: .center) {
-                        ForEach(data, id: \.self) { number in
+                        /*ForEach(data, id: \.self) { number in
                             Rectangle()
                                 .frame(width: 170, height: 170)
                                 .foregroundStyle(colors[number%4])
                                 .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
                             
-                        }
+                        }*/
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
                     }
                 }
                 .padding()
@@ -42,13 +50,21 @@ struct HomeView: View {
                     .font(.system(size: 30, weight: .medium))
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: rows, alignment: .center) {
-                        ForEach(data, id: \.self) { number in
+                        /*ForEach(data, id: \.self) { number in
                             Rectangle()
                                 .frame(width: 170, height: 170)
                                 .foregroundStyle(colors[number%4])
                                 .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
                             
-                        }
+                        }*/
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
                     }
                 }
                 .padding()
@@ -58,13 +74,21 @@ struct HomeView: View {
                     .font(.system(size: 30, weight: .medium))
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: rows, alignment: .center) {
-                        ForEach(data, id: \.self) { number in
+                        /*ForEach(data, id: \.self) { number in
                             Rectangle()
                                 .frame(width: 170, height: 170)
                                 .foregroundStyle(colors[number%4])
                                 .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
                             
-                        }
+                        }*/
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
+                        PictureView()
                     }
                 }
                 .padding()
