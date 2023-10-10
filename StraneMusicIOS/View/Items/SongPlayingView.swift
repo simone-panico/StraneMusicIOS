@@ -1,13 +1,13 @@
 //
-//  SongView.swift
+//  SongPlayingView.swift
 //  StraneMusicIOS
 //
-//  Created by Simone Panico on 05.10.2023.
+//  Created by Simone Panico on 10.10.2023.
 //
 
 import SwiftUI
 
-struct SongView: View {
+struct SongPlayingView: View {
     var body: some View {
         HStack {
             Image("test2")
@@ -26,7 +26,17 @@ struct SongView: View {
             Button(action: {
                 // Action
             }, label: {
-                Image(systemName: "ellipsis")
+                Image(systemName: "backward.fill")
+            })
+            Button(action: {
+                // Action
+            }, label: {
+                Image(systemName: "play.fill")
+            })
+            Button(action: {
+                // Action
+            }, label: {
+                Image(systemName: "forward.fill")
             })
             
             
@@ -51,5 +61,5 @@ struct SongView: View {
 }
 
 #Preview {
-    SongView()
+    SongPlayingView()
 }

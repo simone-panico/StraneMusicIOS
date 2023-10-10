@@ -16,17 +16,36 @@ struct SearchView: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
+            /*ScrollView {
                 LazyVGrid(columns: [GridItem(.fixed(1))], spacing: 20) {
-                    ForEach(data, id: \.self) { number in
+                    /*ForEach(data, id: \.self) { number in
                         ZStack {
                             Rectangle()
                                 .frame(width: 1000, height: 100)
                                 .foregroundStyle(colors[number%4])
                                 .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
                         }
-                    }
+                    }*/
+                    SongView()
                 }
+            }*/
+            VStack {
+                List {
+                    Section(content: {
+                        SongView()
+                        SongView()
+                        SongView()
+                        SongView()
+                        SongView()
+                        SongView()
+                    }, header: {
+                        Text("Recent Searched")
+                    }) {
+                        
+                    }
+                    
+                }
+
             }
             .searchable(text: $searchText)
             .navigationTitle(Text("Search"))

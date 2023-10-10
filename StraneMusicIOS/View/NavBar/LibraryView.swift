@@ -19,7 +19,7 @@ struct LibraryView: View {
         NavigationStack {
             ScrollView {
                 LazyVGrid(columns: adaptiveColumns, spacing: 20) {
-                    ForEach(data, id: \.self) { number in
+                    /*ForEach(data, id: \.self) { number in
                         ZStack {
                             Rectangle()
                                 .frame(width: 170, height: 170)
@@ -29,9 +29,20 @@ struct LibraryView: View {
                                 .foregroundStyle(.white)
                                 .font(.system(size: 80, weight: .medium, design: .rounded))
                         }
-                    }
+                    }*/
+                PictureView()
+                PictureView()
+                PictureView()
+                PictureView()
+                PictureView()
+                PictureView()
+                PictureView()
+                PictureView()
+                
+                    
                 }
             }
+            .padding()
             .overlay(
                 ProfileView()
                     .padding(.trailing, 20)

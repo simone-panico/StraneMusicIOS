@@ -22,6 +22,7 @@
 		261724F42ACF652700A74B21 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724F32ACF652700A74B21 /* SongView.swift */; };
 		261724F62AD48C7D00A74B21 /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724F52AD48C7D00A74B21 /* PictureView.swift */; };
 		261724F82AD4A08600A74B21 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724F72AD4A08600A74B21 /* PlaylistView.swift */; };
+		261724FC2AD56D1500A74B21 /* SongPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724FB2AD56D1500A74B21 /* SongPlayingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		261724F32ACF652700A74B21 /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 		261724F52AD48C7D00A74B21 /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		261724F72AD4A08600A74B21 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
+		261724FB2AD56D1500A74B21 /* SongPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,10 +169,11 @@
 		261724FA2AD4A40A00A74B21 /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				261724ED2ACF55BB00A74B21 /* ProfileView.swift */,
-				261724F32ACF652700A74B21 /* SongView.swift */,
 				261724F72AD4A08600A74B21 /* PlaylistView.swift */,
 				261724F52AD48C7D00A74B21 /* PictureView.swift */,
+				261724F32ACF652700A74B21 /* SongView.swift */,
+				261724FB2AD56D1500A74B21 /* SongPlayingView.swift */,
+				261724ED2ACF55BB00A74B21 /* ProfileView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				261724F62AD48C7D00A74B21 /* PictureView.swift in Sources */,
 				261724EC2ACF50C000A74B21 /* LibraryView.swift in Sources */,
+				261724FC2AD56D1500A74B21 /* SongPlayingView.swift in Sources */,
 				261724C12ACF42F200A74B21 /* HomeView.swift in Sources */,
 				261724F22ACF5EF000A74B21 /* BrowseView.swift in Sources */,
 				261724F82AD4A08600A74B21 /* PlaylistView.swift in Sources */,
