@@ -7,9 +7,10 @@
 
 import SwiftUI
 
+
 struct SongPlayingView: View {
     var body: some View {
-        ZStack {
+        /*ZStack {
             Rectangle().foregroundColor(Color.white.opacity(0.0)).frame(width: UIScreen.main.bounds.size.width, height: 65)
             HStack {
                 Button(action: {}) {
@@ -26,16 +27,17 @@ struct SongPlayingView: View {
                     Image(systemName: "forward.fill").font(.title3)
                 }.buttonStyle(PlainButtonStyle()).padding(.trailing, 30)
             }
-        }
+        }*/
         
         
         
         
-        /*HStack {
+        HStack {
             Image("test2")
                 .resizable()
                 .frame(width: 40, height: 30)
                 .aspectRatio(contentMode: .fit)
+                .padding()
             Spacer()
             VStack {
                 Text("Artist")
@@ -45,21 +47,24 @@ struct SongPlayingView: View {
                     .font(.system(size: 15))
             }
             Spacer()
-            Button(action: {
-                // Action
-            }, label: {
-                Image(systemName: "backward.fill")
-            })
-            Button(action: {
-                // Action
-            }, label: {
-                Image(systemName: "play.fill")
-            })
-            Button(action: {
-                // Action
-            }, label: {
-                Image(systemName: "forward.fill")
-            })
+            HStack {
+                Button(action: {
+                    // Action
+                }, label: {
+                    Image(systemName: "backward.fill")
+                })
+                Button(action: {
+                    // Action
+                }, label: {
+                    Image(systemName: "play.fill")
+                })
+                Button(action: {
+                    // Action
+                }, label: {
+                    Image(systemName: "forward.fill")
+                })
+            }
+            .padding()
             
             
             /*
@@ -78,7 +83,7 @@ struct SongPlayingView: View {
             }, label: {
                 Image(systemName: "forward.fill")
             })*/
-        }*/
+        }
     }
 }
 
