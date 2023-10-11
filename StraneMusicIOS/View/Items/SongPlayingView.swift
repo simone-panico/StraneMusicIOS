@@ -9,7 +9,29 @@ import SwiftUI
 
 struct SongPlayingView: View {
     var body: some View {
-        HStack {
+        ZStack {
+            Rectangle().foregroundColor(Color.white.opacity(0.0)).frame(width: UIScreen.main.bounds.size.width, height: 65)
+            HStack {
+                Button(action: {}) {
+                    HStack {
+                        Image("Cover").resizable().frame(width: 45, height: 45).shadow(radius: 6, x: 0, y: 3).padding(.leading)
+                        Text("Shake It Off").padding(.leading, 10)
+                        Spacer()
+                    }
+                }.buttonStyle(PlainButtonStyle())
+                Button(action: {}) {
+                    Image(systemName: "play.fill").font(.title3)
+                }.buttonStyle(PlainButtonStyle()).padding(.horizontal)
+                Button(action: {}) {
+                    Image(systemName: "forward.fill").font(.title3)
+                }.buttonStyle(PlainButtonStyle()).padding(.trailing, 30)
+            }
+        }
+        
+        
+        
+        
+        /*HStack {
             Image("test2")
                 .resizable()
                 .frame(width: 40, height: 30)
@@ -56,7 +78,7 @@ struct SongPlayingView: View {
             }, label: {
                 Image(systemName: "forward.fill")
             })*/
-        }
+        }*/
     }
 }
 

@@ -9,9 +9,6 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        ZStack(alignment: .bottom) {
-            SongPlayingView()
-        }
         TabView {
             HomeView()
                 .tabItem {

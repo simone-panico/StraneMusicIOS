@@ -10,31 +10,34 @@ import SwiftUI
 struct PlaylistView: View {
     var body: some View {
         NavigationStack {
-            HStack {
-                Button(action: {
-                    
-                }, label: {
-                    Text("Play")
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                })
-                .buttonStyle(.borderedProminent)
-                Button(action: {
-                    
-                }, label: {
-                    Text("Random")
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                })
-                .buttonStyle(.borderedProminent)
-            }
-            .padding()
             VStack {
-                List {
-                    SongView()
-                    SongView()
-                    SongView()
-                    SongView()
-                    SongView()
-                    SongView()
+                Image("test")
+                HStack {
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Play")
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    })
+                    .buttonStyle(.borderedProminent)
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Random")
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    })
+                    .buttonStyle(.borderedProminent)
+                }
+                .padding()
+                VStack {
+                    List {
+                        SongView()
+                        SongView()
+                        SongView()
+                        SongView()
+                        SongView()
+                        SongView()
+                    }
                 }
             }
             .navigationTitle("Playlist Name")
