@@ -32,22 +32,46 @@ struct SongPlayingView: View {
         
         
         
-        HStack {
-            Image("test2")
-                .resizable()
-                .frame(width: 40, height: 30)
-                .aspectRatio(contentMode: .fit)
-                .padding()
-            Spacer()
-            VStack {
-                Text("Artist")
-                    .font(.system(size: 12, weight: .light))
-                Text("Song Name")
-                    .bold()
-                    .font(.system(size: 15))
-            }
-            Spacer()
+        ZStack {
+            Rectangle().foregroundColor(Color.white.opacity(0.0)).frame(width: UIScreen.main.bounds.size.width/1.03, height: 65).background(Blur())
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
             HStack {
+                Image("test2")
+                    .resizable()
+                    .frame(width: 40, height: 30)
+                    .aspectRatio(contentMode: .fit)
+                    .padding()
+                Spacer()
+                VStack {
+                    Text("Artist")
+                        .font(.system(size: 12, weight: .light))
+                    Text("Song Name")
+                        .bold()
+                        .font(.system(size: 15))
+                }
+                Spacer()
+                HStack {
+                    Button(action: {
+                        // Action
+                    }, label: {
+                        Image(systemName: "backward.fill")
+                    })
+                    Button(action: {
+                        // Action
+                    }, label: {
+                        Image(systemName: "play.fill")
+                    })
+                    Button(action: {
+                        // Action
+                    }, label: {
+                        Image(systemName: "forward.fill")
+                    })
+                }
+                .padding()
+                
+                
+                
+                /*
                 Button(action: {
                     // Action
                 }, label: {
@@ -56,33 +80,14 @@ struct SongPlayingView: View {
                 Button(action: {
                     // Action
                 }, label: {
-                    Image(systemName: "play.fill")
+                    Image(systemName: "pause.fill")
                 })
                 Button(action: {
                     // Action
                 }, label: {
                     Image(systemName: "forward.fill")
-                })
+                })*/
             }
-            .padding()
-            
-            
-            /*
-            Button(action: {
-                // Action
-            }, label: {
-                Image(systemName: "backward.fill")
-            })
-            Button(action: {
-                // Action
-            }, label: {
-                Image(systemName: "pause.fill")
-            })
-            Button(action: {
-                // Action
-            }, label: {
-                Image(systemName: "forward.fill")
-            })*/
         }
     }
 }

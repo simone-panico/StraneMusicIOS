@@ -23,6 +23,9 @@
 		261724F62AD48C7D00A74B21 /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724F52AD48C7D00A74B21 /* PictureView.swift */; };
 		261724F82AD4A08600A74B21 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724F72AD4A08600A74B21 /* PlaylistView.swift */; };
 		261724FC2AD56D1500A74B21 /* SongPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724FB2AD56D1500A74B21 /* SongPlayingView.swift */; };
+		261724FE2AD8853100A74B21 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724FD2AD8853100A74B21 /* Blur.swift */; };
+		261725002AD88D3900A74B21 /* SongPlayingViewMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724FF2AD88D3900A74B21 /* SongPlayingViewMax.swift */; };
+		261725022AD88F6D00A74B21 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		261724F52AD48C7D00A74B21 /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		261724F72AD4A08600A74B21 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
 		261724FB2AD56D1500A74B21 /* SongPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayingView.swift; sourceTree = "<group>"; };
+		261724FD2AD8853100A74B21 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		261724FF2AD88D3900A74B21 /* SongPlayingViewMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayingViewMax.swift; sourceTree = "<group>"; };
+		261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +179,10 @@
 				261724F52AD48C7D00A74B21 /* PictureView.swift */,
 				261724F32ACF652700A74B21 /* SongView.swift */,
 				261724FB2AD56D1500A74B21 /* SongPlayingView.swift */,
+				261724FF2AD88D3900A74B21 /* SongPlayingViewMax.swift */,
 				261724ED2ACF55BB00A74B21 /* ProfileView.swift */,
+				261724FD2AD8853100A74B21 /* Blur.swift */,
+				261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -313,10 +322,13 @@
 				261724FC2AD56D1500A74B21 /* SongPlayingView.swift in Sources */,
 				261724C12ACF42F200A74B21 /* HomeView.swift in Sources */,
 				261724F22ACF5EF000A74B21 /* BrowseView.swift in Sources */,
+				261725002AD88D3900A74B21 /* SongPlayingViewMax.swift in Sources */,
 				261724F82AD4A08600A74B21 /* PlaylistView.swift in Sources */,
+				261724FE2AD8853100A74B21 /* Blur.swift in Sources */,
 				261724F42ACF652700A74B21 /* SongView.swift in Sources */,
 				261724EE2ACF55BB00A74B21 /* ProfileView.swift in Sources */,
 				261724EA2ACF4CDF00A74B21 /* MainView.swift in Sources */,
+				261725022AD88F6D00A74B21 /* ProgressIndicatorView.swift in Sources */,
 				261724F02ACF5EDE00A74B21 /* SearchView.swift in Sources */,
 				261724BF2ACF42F200A74B21 /* StraneMusicIOSApp.swift in Sources */,
 			);
