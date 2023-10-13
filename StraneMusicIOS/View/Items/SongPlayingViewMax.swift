@@ -23,7 +23,49 @@ struct SongPlayingViewMax: View {
             
             ProgressView(value: 10, total: 100)
                 .progressViewStyle(ProgressIndicatorView())
-                .frame(width: UIScreen.main.bounds.width / 1.09)
+                .frame(width: UIScreen.main.bounds.width / 1.09, height: 15)
+                .padding()
+                .gesture(DragGesture()
+                         /*.onChanged({ //Value in
+                          // Code
+                          })*/)
+            HStack {
+                Text("3:45")
+                Spacer()
+                Text("-0:15")
+            }
+            .padding()
+            
+            HStack {
+                Button(action: {
+                    // Action
+                }, label: {
+                    Image(systemName: "backward.fill")
+                })
+                .font(.system(size: 25))
+                .padding()
+                
+                Button(action: {
+                    // Action
+                }, label: {
+                    Image(systemName: "pause.fill")
+                })
+                .font(.system(size: 30))
+                .padding()
+                
+                Button(action: {
+                    // Action
+                }, label: {
+                    Image(systemName: "forward.fill")
+                })
+                .font(.system(size: 25))
+                .padding()
+            }
+            .padding()
+            
+            ProgressView(value: 70, total: 100)
+                .progressViewStyle(ProgressIndicatorView())
+                .frame(width: UIScreen.main.bounds.width / 1.09, height: 15)
                 .padding()
                 .gesture(DragGesture()
                          /*.onChanged({ //Value in

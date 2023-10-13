@@ -20,7 +20,6 @@ struct ProgressIndicatorView: ProgressViewStyle {
      
                     RoundedRectangle(cornerRadius: 10.0)
                         .fill(Color(uiColor: .systemGray5))
-                        .frame(height: 15)
                         .frame(width: geometry.size.width)
                         .overlay(alignment: .leading) {
                             RoundedRectangle(cornerRadius: 10.0)
