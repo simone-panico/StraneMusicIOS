@@ -63,16 +63,29 @@ struct SongPlayingViewMax: View {
             }
             .padding()
             
-            ProgressView(value: 70, total: 100)
-                .progressViewStyle(ProgressIndicatorView())
-                .frame(width: UIScreen.main.bounds.width / 1.09, height: 15)
-                .padding()
-                .gesture(DragGesture()
-                         /*.onChanged({ //Value in
-                          // Code
+            
+            
+            HStack {
+                Button(action: {
+                    // Action
+                }, label: {
+                    Image(systemName: "speaker.wave.1.fill")
+                })
+                ProgressView(value: 70, total: 100)
+                    .progressViewStyle(ProgressIndicatorView())
+                    .frame(width: UIScreen.main.bounds.width / 1.5, height: 15)
+                    .padding()
+                    .gesture(DragGesture()
+                             /*.onChanged({ //Value in
+                              // Code
                           })*/)
+                Button(action: {
+                    // Action
+                }, label: {
+                    Image(systemName: "speaker.wave.3.fill")
+                })
+            }
         }
-        
     }
 }
 

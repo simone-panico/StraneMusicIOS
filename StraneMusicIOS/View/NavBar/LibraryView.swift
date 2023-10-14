@@ -10,10 +10,13 @@ import SwiftUI
 struct LibraryView: View {
     private var data: [Int] = Array(1...20)
     private let colors: [Color] = [.red, .blue, .green, .yellow]
+    @State private var searchText: String = ""
     
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum: 170))
     ]
+    
+    
     
     var body: some View {
         NavigationStack {
@@ -38,8 +41,6 @@ struct LibraryView: View {
                 PictureView()
                 PictureView()
                 PictureView()
-                
-                    
                 }
             }
             .padding()
@@ -49,8 +50,8 @@ struct LibraryView: View {
                     .offset(x: 0, y: -50),
                 alignment: .topTrailing)
             .navigationTitle(Text("Library"))
-            
         }
+        
     }
 }
 
