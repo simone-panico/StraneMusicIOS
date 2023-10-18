@@ -13,7 +13,7 @@ struct SongPlayingViewMax: View {
             Image("test")
                 .padding()
             
-            Text("Michael Jackson")
+            Text("Michael heheJackson")
                 .font(.system(size: 15, weight: .light))
             Text("Beat It")
                 .bold()
