@@ -67,7 +67,7 @@ struct SongPlayingViewMax: View {
             
             HStack {
                 Button(action: {
-                    // Action
+                    // Act
                 }, label: {
                     Image(systemName: "speaker.wave.1.fill")
                 })
