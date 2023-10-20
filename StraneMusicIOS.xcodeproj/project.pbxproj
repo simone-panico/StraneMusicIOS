@@ -26,6 +26,7 @@
 		261724FE2AD8853100A74B21 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724FD2AD8853100A74B21 /* Blur.swift */; };
 		261725002AD88D3900A74B21 /* SongPlayingViewMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261724FF2AD88D3900A74B21 /* SongPlayingViewMax.swift */; };
 		261725022AD88F6D00A74B21 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */; };
+		264D70522AE08EB600DA09A5 /* GetYoutubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264D70512AE08EB600DA09A5 /* GetYoutubeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		261724FD2AD8853100A74B21 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		261724FF2AD88D3900A74B21 /* SongPlayingViewMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayingViewMax.swift; sourceTree = "<group>"; };
 		261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
+		264D70512AE08EB600DA09A5 /* GetYoutubeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetYoutubeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,8 @@
 		261724BD2ACF42F200A74B21 /* StraneMusicIOS */ = {
 			isa = PBXGroup;
 			children = (
+				264D70502AE08E5900DA09A5 /* API */,
+				264D704F2AE08E4800DA09A5 /* ViewModel */,
 				261724E82ACF431300A74B21 /* View */,
 				261724BE2ACF42F200A74B21 /* StraneMusicIOSApp.swift */,
 				261724C22ACF42F400A74B21 /* Assets.xcassets */,
@@ -185,6 +189,21 @@
 				261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */,
 			);
 			path = Items;
+			sourceTree = "<group>";
+		};
+		264D704F2AE08E4800DA09A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		264D70502AE08E5900DA09A5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				264D70512AE08EB600DA09A5 /* GetYoutubeData.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +350,7 @@
 				261725022AD88F6D00A74B21 /* ProgressIndicatorView.swift in Sources */,
 				261724F02ACF5EDE00A74B21 /* SearchView.swift in Sources */,
 				261724BF2ACF42F200A74B21 /* StraneMusicIOSApp.swift in Sources */,
+				264D70522AE08EB600DA09A5 /* GetYoutubeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
