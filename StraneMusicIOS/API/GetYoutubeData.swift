@@ -5,22 +5,92 @@
 //  Created by Simone Panico on 19.10.2023.
 //
 
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
+//
+//   let youtubeDL = try? JSONDecoder().decode(YoutubeDL.self, from: jsonData)
+
 import Foundation
 
-class getData {
-    func get_request() {
-        let url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")!
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                guard
-                    error == nil,
-                    let data = data,
-                    let string = String(data: data, encoding: .utf8)
-                
+// MARK: - YoutubeDL
+struct YoutubeDL: Codable {
+    var kind, etag, nextPageToken, regionCode: String
+    var pageInfo: PageInfo
+    var items: [Item]
+    
+    static let all: [YoutubeDL] = Bundle.main.decode(file: "test.json")
+    static let sample: YoutubeDL = all[0]
+}
 
-                print(string)
-            }
-            task.resume()
-        
+// MARK: - Item
+struct Item: Codable {
+    var kind, etag: String
+    var id: ID
+    var snippet: Snippet
+}
+
+// MARK: - ID
+struct ID: Codable {
+    var kind, videoID: String
+
+    enum CodingKeys: String, CodingKey {
+        case kind
+        case videoID
     }
 }
 
+// MARK: - Snippet
+struct Snippet: Codable {
+    var publishedAt: Date
+    var channelID, title, description: String
+    var thumbnails: Thumbnails
+    var channelTitle, liveBroadcastContent: String
+    var publishTime: Date
+
+    enum CodingKeys: String, CodingKey {
+        case publishedAt
+        case channelID
+        case title, description, thumbnails, channelTitle, liveBroadcastContent, publishTime
+    }
+}
+
+// MARK: - Thumbnails
+struct Thumbnails: Codable {
+    var thumbnailsDefault, medium, high: Default
+
+    enum CodingKeys: String, CodingKey {
+        case thumbnailsDefault
+        case medium, high
+    }
+}
+
+// MARK: - Default
+struct Default: Codable {
+    var url: String
+    var width, height: Int
+}
+
+// MARK: - PageInfo
+struct PageInfo: Codable {
+    var totalResults, resultsPerPage: Int
+}
+
+extension Bundle {
+    func decode<T: Decodable>(file: String) -> T {
+        guard let url = self.url(forResource: file, withExtension: nil) else {
+            fatalError("Could not find \(file) in the Project")
+        }
+        
+        guard let data = try? Data(contentsOf: url) else {
+            fatalError("Could not load \(file) in the Project")
+        }
+        
+        let decoder = JSONDecoder()
+        
+        guard let loadedData = try? decoder.decode(T.self, from: data) else {
+            fatalError("Could not decode \(file) in the Project")
+        }
+        
+        return loadedData
+    }
+}

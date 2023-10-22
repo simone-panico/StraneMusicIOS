@@ -1,0 +1,182 @@
+﻿{
+    "kind": "youtube#searchListResponse",
+    "etag": "fY9nvdjFdlqUw5u-priQsPkp3J4",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "CH",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "AUmSrB06Sp_6VcjHc4tielIhZ70",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "34Na4j8AVgA"
+            },
+            "snippet": {
+                "publishedAt": "2016-09-28T16:00:01Z",
+                "channelId": "UCF_fDSgPpBQuh1MsUTgIARQ",
+                "title": "The Weeknd - Starboy ft. Daft Punk (Official Video)",
+                "description": "Starboy ft. Daft Punk (Official Video) Taken from the new album Starboy http://theweeknd.co/StarboyYD Connect with The ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/34Na4j8AVgA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/34Na4j8AVgA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/34Na4j8AVgA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "TheWeekndVEVO",
+                "liveBroadcastContent": "none",
+                "publishTime": "2016-09-28T16:00:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "uPnJsoI9AYr9t2VhdkRW4SImMXc",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Rif-RTvmmss"
+            },
+            "snippet": {
+                "publishedAt": "2023-03-14T23:34:20Z",
+                "channelId": "UCF_fDSgPpBQuh1MsUTgIARQ",
+                "title": "The Weeknd - Starboy (Audio) ft. Daft Punk",
+                "description": "Music video by The Weeknd performing Starboy (Audio). © 2023 The Weeknd XO, Inc., Manufactured and Marketed by Republic ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Rif-RTvmmss/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Rif-RTvmmss/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Rif-RTvmmss/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "TheWeekndVEVO",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-03-14T23:34:20Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "wItN9grxqVlBYc6TCtpIgXZR4aE",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "plnfIj7dkJE"
+            },
+            "snippet": {
+                "publishedAt": "2018-04-19T12:00:05Z",
+                "channelId": "UClYV6hHlupm_S_ObS1W-DYw",
+                "title": "Starboy",
+                "description": "Provided to YouTube by Universal Music Group Starboy · The Weeknd · Daft Punk Starboy ℗ 2016 The Weeknd XO, Inc., ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/plnfIj7dkJE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/plnfIj7dkJE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/plnfIj7dkJE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "The Weeknd - Topic",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-04-19T12:00:05Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "oRcTwjPCuAXLnCU8OS_T2wKawQk",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "xizN47Box_Y"
+            },
+            "snippet": {
+                "publishedAt": "2020-01-19T16:46:53Z",
+                "channelId": "UCNqFDjYTexJDET3rPDrmJKg",
+                "title": "The Weeknd - Starboy (Lyrics) ft. Daft Punk",
+                "description": "Follow our Spotify playlists: http://bit.ly/7cloudsSpotify The Weeknd - Starboy (Lyrics) ft. Daft Punk ⏬ Download / Stream: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/xizN47Box_Y/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/xizN47Box_Y/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/xizN47Box_Y/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "7clouds",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-01-19T16:46:53Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "MRzsOOjD15xYxEuiEILxOHbee3g",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "vuT_bXzhqhY"
+            },
+            "snippet": {
+                "publishedAt": "2016-12-06T20:50:06Z",
+                "channelId": "UCF_fDSgPpBQuh1MsUTgIARQ",
+                "title": "The Weeknd - Starboy (Live From The Victoria’s Secret Fashion Show 2016 in Paris)",
+                "description": "Starboy ft. Daft Punk (Live From The Victoria's Secret Fashion Show 2016 in Paris) Taken from the new album Starboy ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/vuT_bXzhqhY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/vuT_bXzhqhY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/vuT_bXzhqhY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "TheWeekndVEVO",
+                "liveBroadcastContent": "none",
+                "publishTime": "2016-12-06T20:50:06Z"
+            }
+        }
+    ]
+}
