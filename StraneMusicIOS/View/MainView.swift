@@ -40,7 +40,7 @@ struct MainView: View {
         
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
             TabView {
-                HomeView()
+                Content()
                     .tabItem {
                     Label(
                         title: { Text("Home") },

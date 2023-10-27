@@ -72,7 +72,7 @@
 		261724FF2AD88D3900A74B21 /* SongPlayingViewMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayingViewMax.swift; sourceTree = "<group>"; };
 		261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
 		2624B3D82AE5AC6200C431A7 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
-		2624B3DA2AE5B02E00C431A7 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		2624B3DA2AE5B02E00C431A7 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test.json; path = ../API/test.json; sourceTree = "<group>"; };
 		264D70512AE08EB600DA09A5 /* GetYoutubeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetYoutubeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +129,6 @@
 				261724E82ACF431300A74B21 /* View */,
 				261724BE2ACF42F200A74B21 /* StraneMusicIOSApp.swift */,
 				261724C22ACF42F400A74B21 /* Assets.xcassets */,
-				2624B3DA2AE5B02E00C431A7 /* test.json */,
 				261724C42ACF42F400A74B21 /* Preview Content */,
 			);
 			path = StraneMusicIOS;
@@ -139,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				261724C52ACF42F400A74B21 /* Preview Assets.xcassets */,
+				2624B3DA2AE5B02E00C431A7 /* test.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
