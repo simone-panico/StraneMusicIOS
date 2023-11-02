@@ -48,6 +48,9 @@ struct SearchView: View {
 
             }
             .searchable(text: $searchText)
+            .onSubmit(of: .search) {
+                GetyoutubeData(q: searchText)
+            }
             .navigationTitle(Text("Search"))
             
         }
