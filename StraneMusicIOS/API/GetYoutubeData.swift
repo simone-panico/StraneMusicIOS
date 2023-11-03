@@ -54,16 +54,15 @@ struct YouTubeThumbnail: Codable {
 
 
 func GetyoutubeData(q: String) {
-    print(q)
     // Definiere die URL zur API, von der du die JSON-Daten abrufen möchtest
-    if let url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=humble&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")
-    //url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?pageToken=CAoQAA&part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")
+    if let url = URL(string: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=\(q)&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")
+    //url = URL(string: "https://www.googleapis.com/youtube/v3/search?pageToken=CAoQAA&part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")
     {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 print("Fehler beim Abrufen der Daten: \(error)")
                 return
-            }
+            }   
             
             guard let data = data else {
                 print("Keine Daten erhalten.")
@@ -98,11 +97,11 @@ func GetyoutubeData(q: String) {
                 }
                 
                 // Daten für VideoID
-                /*
+                
                 for videoResult in searchResponse.items {
                     let videoId = videoResult.id.videoId
                     print("Video ID: \(videoId)")
-                }*/
+                }
                 
                 // Daten für Titel
                 for videoResult in searchResponse.items {
