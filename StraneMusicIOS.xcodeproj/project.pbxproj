@@ -28,7 +28,6 @@
 		261725022AD88F6D00A74B21 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */; };
 		2633AA012AF4441000920333 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633AA002AF4441000920333 /* SearchViewModel.swift */; };
 		264D70522AE08EB600DA09A5 /* GetYoutubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264D70512AE08EB600DA09A5 /* GetYoutubeData.swift */; };
-		267AED672AF8398300460357 /* TestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267AED662AF8398300460357 /* TestUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +72,6 @@
 		261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
 		2633AA002AF4441000920333 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		264D70512AE08EB600DA09A5 /* GetYoutubeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetYoutubeData.swift; sourceTree = "<group>"; };
-		267AED662AF8398300460357 /* TestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +174,6 @@
 				261724EF2ACF5EDE00A74B21 /* SearchView.swift */,
 				261724EB2ACF50C000A74B21 /* LibraryView.swift */,
 				261724F12ACF5EF000A74B21 /* BrowseView.swift */,
-				267AED662AF8398300460357 /* TestUI.swift */,
 			);
 			path = NavBar;
 			sourceTree = "<group>";
@@ -360,7 +357,6 @@
 				261724F82AD4A08600A74B21 /* PlaylistView.swift in Sources */,
 				261724FE2AD8853100A74B21 /* Blur.swift in Sources */,
 				261724F42ACF652700A74B21 /* SongView.swift in Sources */,
-				267AED672AF8398300460357 /* TestUI.swift in Sources */,
 				261724EE2ACF55BB00A74B21 /* ProfileView.swift in Sources */,
 				261724EA2ACF4CDF00A74B21 /* MainView.swift in Sources */,
 				261725022AD88F6D00A74B21 /* ProgressIndicatorView.swift in Sources */,

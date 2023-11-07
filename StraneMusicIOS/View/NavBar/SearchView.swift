@@ -10,8 +10,7 @@ import SwiftUI
 struct SearchView: View {
     @State private var searchText: String = ""
     @State private var ifSearched = false
-    @State private var searchResults: YouTubeSearchResponse?
-    
+    @State var searchResults: YouTubeSearchResponse?
     
     private var data: [Int] = Array(1...20)
     private let colors: [Color] = [.red, .blue, .green, .yellow]
@@ -53,6 +52,7 @@ struct SearchView: View {
                     
                 } else {
                     
+                    
                     List(searchResults?.items ?? [], id: \.id.videoId) { videoResult in
                         VStack(alignment: .leading) {
                             Text("Video ID: \(videoResult.id.videoId)")
@@ -67,7 +67,11 @@ struct SearchView: View {
             }
             .searchable(text: $searchText)
             .onSubmit(of: .search) {
-                GetyoutubeData(q: searchText)
+                getYoutubeData() { (searchResults) in
+                    
+                    self.searchResults = searchResults
+                    
+                }
                 ifSearched = !ifSearched
             }
             .navigationTitle(Text("Search"))
@@ -77,11 +81,47 @@ struct SearchView: View {
     }
     
     
-    func GetyoutubeData(q: String) {
+    // With Page Token: https://youtube.googleapis.com/youtube/v3/search?pageToken=CAoQAA&part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg
+    func getYoutubeData(completion:@escaping (YouTubeSearchResponse) -> ()) {
+        guard let url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg") else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                        print("Fehler beim Abrufen der Daten: \(error)")
+                        return
+                    }
+
+                    guard let data = data else {
+                        print("Keine Daten erhalten.")
+                        return
+                    }
+            
+            do {
+                let decoder = JSONDecoder()
+                let searchResults = try decoder.decode(YouTubeSearchResponse.self, from: data)
+                print(searchResults)
+                
+                
+                DispatchQueue.main.async {
+                    completion(searchResults)
+                }
+            } catch {
+                print("fehler bei ... \(error)")
+            }
+            
+        }.resume()
+        
+        
+        /*
         // Definiere die URL zur API, von der du die JSON-Daten abrufen möchtest
-        if let url = URL(string: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=\(q)&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")
-        //url = URL(string: "https://www.googleapis.com/youtube/v3/search?pageToken=CAoQAA&part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")
+        if let url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")
+        //url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?pageToken=CAoQAA&part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg")
+        
+        
         {
+            
+            
+            
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let error = error {
                     print("Fehler beim Abrufen der Daten: \(error)")
@@ -93,21 +133,19 @@ struct SearchView: View {
                     return
                 }
                 
-                print(data)
-                
-                /*do {
-                 // Dekodiere die JSON-Daten in Swift-Objekte
-                 let decoder = JSONDecoder()
-                 let searchResponse = try decoder.decode(YouTubeSearchResponse.self, from: data)
-                 
-                 // Jetzt kannst du auf die Daten zugreifen
-                 print("Kind: \(searchResponse.kind)")
-                 print("Etag: \(searchResponse.etag)")
-                 print("Nächste Seite: \(searchResponse.nextPageToken)")
-                 // usw.
-                 } catch {
-                 print("Fehler beim Dekodieren der JSON-Daten: \(error)")
-                 }*/
+                do {
+                    // Dekodiere die JSON-Daten in Swift-Objekte
+                    let decoder = JSONDecoder()
+                    let searchResponse = try decoder.decode(YouTubeSearchResponse.self, from: data)
+                    
+                    // Jetzt kannst du auf die Daten zugreifen
+                    print("Kind: \(searchResponse.kind)")
+                    print("Etag: \(searchResponse.etag)")
+                    print("Nächste Seite: \(searchResponse.nextPageToken)")
+                    // usw.
+                } catch {
+                    print("Fehler beim Dekodieren der JSON-Daten: \(error)")
+                }
                 
                 
                 do {
@@ -121,11 +159,10 @@ struct SearchView: View {
                     }
                     
                     // Daten für VideoID
-                    /*
                     for videoResult in searchResponse.items {
                         let videoId = videoResult.id.videoId
                         print("Video ID: \(videoId)")
-                    }*/
+                    }
                     
                     // Daten für Titel
                     for videoResult in searchResponse.items {
@@ -143,10 +180,12 @@ struct SearchView: View {
                     print("Fehler beim Dekodieren der JSON-Daten: \(error)")
                 }
                 
+                
+                
             }.resume()
         } else {
             print("Ungültige URL.")
-        }
+        }*/
     }
 }
 
