@@ -31,12 +31,12 @@ struct PlaylistView: View {
                 .padding()
                 VStack {
                     List {
+                        /*SongView()
                         SongView()
                         SongView()
                         SongView()
                         SongView()
-                        SongView()
-                        SongView()
+                        SongView()*/
                     }
                 }
             }

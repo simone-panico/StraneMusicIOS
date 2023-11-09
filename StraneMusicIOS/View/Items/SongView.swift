@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SongView: View {
+    var artist: String
+    var songName: String
+    var pictureLink: String
+    
     var body: some View {
         HStack {
             Image("test2")
@@ -16,9 +20,9 @@ struct SongView: View {
                 .aspectRatio(contentMode: .fit)
             Spacer()
             VStack {
-                Text("Artist")
+                Text(artist)
                     .font(.system(size: 12, weight: .light))
-                Text("Song Name")
+                Text(songName)
                     .bold()
                     .font(.system(size: 15))
             }
@@ -51,5 +55,5 @@ struct SongView: View {
 }
 
 #Preview {
-    SongView()
+    SongView(artist: "Eminem", songName: "Mockingbird", pictureLink: "")
 }

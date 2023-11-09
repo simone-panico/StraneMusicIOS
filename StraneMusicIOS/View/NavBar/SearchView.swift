@@ -36,12 +36,12 @@ struct SearchView: View {
                 if !ifSearched {
                     List {
                         Section(content: {
+                            /*SongView()
                             SongView()
                             SongView()
                             SongView()
                             SongView()
-                            SongView()
-                            SongView()
+                            SongView()*/
                         }, header: {
                             Text("Recent Searched")
                         }) {
@@ -54,13 +54,15 @@ struct SearchView: View {
                     
                     
                     List(searchResults?.items ?? [], id: \.id.videoId) { videoResult in
-                        VStack(alignment: .leading) {
+                        SongView(artist: videoResult.snippet.channelTitle, songName: videoResult.snippet.title, pictureLink: videoResult.snippet.thumbnails.default.url)
+                        
+                        /*VStack(alignment: .leading) {
                             Text("Video ID: \(videoResult.id.videoId)")
                             Text("Title: \(videoResult.snippet.title)")
                             Text("Channel Titel: \(videoResult.snippet.channelTitle)")
                             // Weitere Informationen anzeigen, wie das Thumbnail
                             // Verwende dazu das URL-Objekt, um das Bild aus dem Internet herunterzuladen
-                        }
+                        }*/
                     }
                     
                 }
@@ -83,7 +85,7 @@ struct SearchView: View {
     
     // With Page Token: https://youtube.googleapis.com/youtube/v3/search?pageToken=CAoQAA&part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg
     func getYoutubeData(completion:@escaping (YouTubeSearchResponse) -> ()) {
-        guard let url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=starboy&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg") else { return }
+        guard let url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=\(searchText)&type=video&key=AIzaSyAS2U9183D5RlbCc3C9E9mzfPFPS4-XqQg") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
