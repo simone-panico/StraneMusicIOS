@@ -14,10 +14,23 @@ struct SongView: View {
     
     var body: some View {
         HStack {
-            Image("test2")
-                .resizable()
-                .frame(width: 40, height: 30)
-                .aspectRatio(contentMode: .fit)
+            AsyncImage(url: URL(string: pictureLink)) { phase in
+                switch phase {
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 30)
+                case .failure(_):
+                    // Handle failure or use a placeholder image
+                    Text("Failed to load image")
+                case .empty:
+                    // Handle empty state or use a placeholder image
+                    Text("Loading...")
+                default:
+                    Text("Loading...")
+                }
+            }
             Spacer()
             VStack {
                 Text(artist)

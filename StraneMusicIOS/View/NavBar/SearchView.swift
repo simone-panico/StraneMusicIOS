@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
     @State private var searchText: String = ""
-    @State private var ifSearched = false
+    //@State private var ifSearched = false
     @State var searchResults: YouTubeSearchResponse?
     
     private var data: [Int] = Array(1...20)
@@ -33,7 +33,7 @@ struct SearchView: View {
             
             
             VStack {
-                if !ifSearched {
+                if searchText.isEmpty {
                     List {
                         Section(content: {
                             /*SongView()
@@ -74,7 +74,6 @@ struct SearchView: View {
                     self.searchResults = searchResults
                     
                 }
-                ifSearched = !ifSearched
             }
             .navigationTitle(Text("Search"))
             
@@ -94,7 +93,7 @@ struct SearchView: View {
                     }
 
                     guard let data = data else {
-                        print("Keine Daten erhalten.")
+                        print("Keine Daten")
                         return
                     }
             
@@ -108,7 +107,7 @@ struct SearchView: View {
                     completion(searchResults)
                 }
             } catch {
-                print("fehler bei ... \(error)")
+                print("fehler bei Decode \(error)")
             }
             
         }.resume()
