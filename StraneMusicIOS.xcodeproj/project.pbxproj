@@ -30,6 +30,7 @@
 		262D62452B016A93003BF5D5 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262D62442B016A93003BF5D5 /* SwiftUIView.swift */; };
 		2633AA012AF4441000920333 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633AA002AF4441000920333 /* SearchViewModel.swift */; };
 		264D70522AE08EB600DA09A5 /* GetYoutubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264D70512AE08EB600DA09A5 /* GetYoutubeData.swift */; };
+		26D0AC002B03675500FFEA53 /* YoutubeDLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0ABFF2B03675500FFEA53 /* YoutubeDLP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		262D62442B016A93003BF5D5 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		2633AA002AF4441000920333 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		264D70512AE08EB600DA09A5 /* GetYoutubeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetYoutubeData.swift; sourceTree = "<group>"; };
+		26D0ABFF2B03675500FFEA53 /* YoutubeDLP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDLP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				261724CE2ACF42F400A74B21 /* StraneMusicIOSTests */,
 				261724D82ACF42F400A74B21 /* StraneMusicIOSUITests */,
 				261724BC2ACF42F200A74B21 /* Products */,
+				26C5122F2B040D8200ADA1E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +198,7 @@
 				261725012AD88F6D00A74B21 /* ProgressIndicatorView.swift */,
 				262D62422B0158E1003BF5D5 /* YoutubePlayer.swift */,
 				262D62442B016A93003BF5D5 /* SwiftUIView.swift */,
+				26D0ABFF2B03675500FFEA53 /* YoutubeDLP.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -223,6 +227,13 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		26C5122F2B040D8200ADA1E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,6 +250,8 @@
 			dependencies = (
 			);
 			name = StraneMusicIOS;
+			packageProductDependencies = (
+			);
 			productName = StraneMusicIOS;
 			productReference = 261724BB2ACF42F200A74B21 /* StraneMusicIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +288,8 @@
 				261724D72ACF42F400A74B21 /* PBXTargetDependency */,
 			);
 			name = StraneMusicIOSUITests;
+			packageProductDependencies = (
+			);
 			productName = StraneMusicIOSUITests;
 			productReference = 261724D52ACF42F400A74B21 /* StraneMusicIOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -311,6 +326,9 @@
 				Base,
 			);
 			mainGroup = 261724B22ACF42F200A74B21;
+			packageReferences = (
+				26C8EECC2B0388F40058771B /* XCRemoteSwiftPackageReference "cockle" */,
+			);
 			productRefGroup = 261724BC2ACF42F200A74B21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,6 +386,7 @@
 				261724EE2ACF55BB00A74B21 /* ProfileView.swift in Sources */,
 				261724EA2ACF4CDF00A74B21 /* MainView.swift in Sources */,
 				261725022AD88F6D00A74B21 /* ProgressIndicatorView.swift in Sources */,
+				26D0AC002B03675500FFEA53 /* YoutubeDLP.swift in Sources */,
 				261724F02ACF5EDE00A74B21 /* SearchView.swift in Sources */,
 				261724BF2ACF42F200A74B21 /* StraneMusicIOSApp.swift in Sources */,
 				264D70522AE08EB600DA09A5 /* GetYoutubeData.swift in Sources */,
@@ -537,6 +556,7 @@
 				DEVELOPMENT_TEAM = SGC6CXQ529;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StraneMusicIOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -566,6 +586,7 @@
 				DEVELOPMENT_TEAM = SGC6CXQ529;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StraneMusicIOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -700,6 +721,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26C8EECC2B0388F40058771B /* XCRemoteSwiftPackageReference "cockle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxchuquimia/cockle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 261724B32ACF42F200A74B21 /* Project object */;
 }

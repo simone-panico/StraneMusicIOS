@@ -61,7 +61,7 @@ struct MainView: View {
                         icon: { Image(systemName: "play.square.stack") }
                     )
                 }
-                BrowseView()
+                YoutubeDLP()
                 .tabItem {
                     Label(
                         title: { Text("Browse") },

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "cockle",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maxchuquimia/cockle",
+      "state" : {
+        "revision" : "48b18b56f1ab91bace1c1f432e032849adbba807",
+        "version" : "0.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}
