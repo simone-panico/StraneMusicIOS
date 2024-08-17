@@ -21,6 +21,6 @@ There are no current plans to continue development on this project. However, les
 
 ## Pictures
 
-![Searchbar](./images/simulator_search.png)
-![Music Player](./images/simulator_player.png)
-![Playlist View](./images/simulator_playlist.png)
+<img src="./images/simulator_search.png" alt="Searchbar" width="300"/>
+<img src="./images/simulator_player.png" alt="Music Player" width="300"/>
+<img src="./images/simulator_playlist.png" alt="Playlist View" width="300"/>
