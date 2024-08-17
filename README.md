@@ -7,7 +7,7 @@ This is a simple music player app designed for iOS devices. The app was created 
 
 - **Stream Music:** Fetches music from YouTube using the YouTube API.
 - **Custom Server:** Streams the music through a custom server.
-- **User-Friendly Interface:** Designed with simplicity in mind for an effortless music experience. (Inspiration from Apple Music, see Pictures)
+- **User-Friendly Interface:** Designed with simplicity in mind for an effortless music experience. (Inspiration from Apple Music, see Screenshots)
 
 ## Discontinuation
 
@@ -19,8 +19,10 @@ There are no current plans to continue development on this project. However, les
 
 ---
 
-## Pictures
+## Screenshots
 
-<img src="./images/simulator_search.png" alt="Searchbar" width="300"/>
-<img src="./images/simulator_player.png" alt="Music Player" width="300"/>
-<img src="./images/simulator_playlist.png" alt="Playlist View" width="300"/>
+<p align="center">
+  <img src="./images/simulator_search.png" alt="Searchbar" width="300" style="display:inline-block; margin-right: 10px;"/>
+  <img src="./images/simulator_player.png" alt="Music Player" width="300" style="display:inline-block; margin-right: 10px;"/>
+  <img src="./images/simulator_playlist.png" alt="Playlist View" width="300" style="display:inline-block;"/>
+</p>
