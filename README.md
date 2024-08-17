@@ -20,3 +20,7 @@ There are no current plans to continue development on this project. However, les
 ---
 
 ## Pictures
+
+![Searchbar](./images/simulator_search.png)
+![Music Player](./images/simulator_player.png)
+![Playlist View](./images/simulator_playlist.png)
